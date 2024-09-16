@@ -1,0 +1,33 @@
+{
+    "keyboard_layout": "us",
+    "language": "en_US",
+    "region": "Asia/Kathmandu",
+    "timezone": "Asia/Kathmandu",
+    "bootloader": "systemd-bootctl",
+    "hostname": "archlinux",
+    "audio_config": null,
+    "users": [
+      {
+        "name": "dig",
+        "password": "password",
+        "groups": ["wheel", "docker"]
+      }
+    ],
+    "disks": {
+      "/dev/sda": {
+        "partitions": [
+          {
+            "mount": "/",
+            "size": "100%"
+          }
+        ]
+      }
+    },
+    "packages": ["base", "linux", "linux-firmware", "vim", "git", "curl", "docker", "npm", "python-pip", "nginx"],
+    "swap": true,
+    "no_pkg_lookups": false,
+    "ntp": true,
+    "offline": false,
+    "parallel downloads": 5
+}
+  
